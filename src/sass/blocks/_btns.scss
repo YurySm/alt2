@@ -1,0 +1,15 @@
+.btn {
+    width: 138px;
+    height: 42px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    background: #484CE6;
+    border-radius: 5px;
+    &:hover {
+        background: #FFFFFF;
+        color: #484CE6;
+    }
+}

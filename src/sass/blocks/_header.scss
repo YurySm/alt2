@@ -1,0 +1,118 @@
+.header {
+    height: 120px;
+    width: 100%;
+    padding: 39px 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    &__humburger {
+        border: none;
+        background-color: transparent;
+        margin-right: 105px;
+    }
+    &__menu {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 20;
+        left: 210px;
+        right: 210px;
+        height: 100vh;
+        background: #18172F;
+    }
+    &__nav-items {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+    &__nav-item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        border-right: 1px solid rgba(255,255,255,.2);
+        &:first-child {
+            border-left: 1px solid rgba(255,255,255,.2);
+        }
+        &:nth-child(odd) {
+            &::before {
+                position: absolute;
+                top: 140px;
+                left: -4px;
+                content: "";
+                display: block;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+            &::after {
+                position: absolute;
+                bottom: 140px;
+                left: -4px;
+                content: "";
+                display: block;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+        }
+        &:nth-child(even) {
+            &::before {
+                position: absolute;
+                top: 250px;
+                left: -4px;
+                content: "";
+                display: block;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+            &::after {
+                position: absolute;
+                bottom: 250px;
+                left: -4px;
+                content: "";
+                display: block;
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                background-color: #fff;
+            }
+        }
+        &:last-child {
+            width: 0;
+            padding: 0;
+            border-right: unset;
+        }
+
+
+        b {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 158.9%;
+            letter-spacing: 0.1em;
+            color: #484CE6;
+            margin-right: 40px;
+        }
+        a {
+            color: #fff;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 158.9%;
+            letter-spacing: 0.1em;
+        }
+    }
+    &__logo {
+        position: relative;
+        z-index: 50;
+    }
+}

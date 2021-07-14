@@ -1,0 +1,44 @@
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: url('../img/hero/man.png') center center/contain no-repeat;
+    &__wrapper{
+        width: 605px;
+        // height: 100%;
+        margin: 0 auto;
+    }
+    &__title {
+        margin-top: 580px;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        span {
+            color: #484CE6;
+        }
+    }
+    &__subtitle {
+        width: 330px;
+        margin: 0 auto;
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 110%;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+    &__descr {
+        position: absolute;
+        bottom: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        font-size: 300px;
+        line-height: 300px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.03;
+    }
+}
