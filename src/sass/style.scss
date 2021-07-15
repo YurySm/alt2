@@ -23,14 +23,14 @@ body {
 }
 .section-number {
     position: absolute;
-    right: -30px;
+    right: -40px;
     top: 50%;
     transform: translateY(-50%);
     font-weight: bold;
     font-size: 200px;
     line-height: 230px;
     color: #18172F;
-    text-shadow: 0 0 3px #FFFFFF;
+    text-shadow:0 0 2px rgba(255, 255, 255, 0.4);
 }
 .counter-number{
     position: absolute;
