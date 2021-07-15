@@ -6,20 +6,32 @@ document.addEventListener('DOMContentLoaded', () => {
           menu = document.querySelector('.header__menu'),
           menuItems = document.querySelectorAll('.header__nav-item');
     humburger.addEventListener('click', () => {
+        if(menu.classList.contains('fadeOut')) {
+            menu.classList.remove('fadeOut');
+        }
+        menu.classList.add('fade');
         menu.style.display = 'block';
         close.style.display = 'block';
         humburger.style.display = 'none';
     });
     close.addEventListener('click', () => {
-        menu.style.display = 'none';
-        close.style.display = 'none';
+        menu.classList.remove('fade');
+        menu.classList.add('fadeOut');
         humburger.style.display = 'block';
+        close.style.display = 'none';
+        setTimeout(() => {
+            menu.style.display = 'none';
+        },600);
     });
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
-            menu.style.display = 'none';
-            close.style.display = 'none';
+            menu.classList.remove('fade');
+            menu.classList.add('fadeOut');
             humburger.style.display = 'block';
+            close.style.display = 'none';
+            setTimeout(() => {
+                menu.style.display = 'none';
+            },600);
         });
     });
 });

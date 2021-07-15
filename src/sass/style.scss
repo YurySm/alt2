@@ -6,7 +6,14 @@
     font-weight: normal;
     margin: 0;
     padding: 0;
+    transition-property: background-color,color,fill,stroke,border-color,outline;
+    transition-duration: .4s;
+    transition-timing-function: ease-in;
 }
+.fade{animation-name: fade;animation-duration: .7s;}
+@keyframes fade{from{opacity: 0;}to{opacity: 1;}}
+.fadeOut{animation-name: fadeOut;animation-duration: .7s;}
+@keyframes fadeOut{from{opacity: 1;}to{opacity: 0;}}
 ul {
     margin: 0;
     padding: 0;
