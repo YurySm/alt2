@@ -20,6 +20,7 @@
         border: none;
         background-color: transparent;
         margin-right: 105px;
+        padding-right: 11px;
     }
     &__menu {
         display: none;
@@ -57,8 +58,11 @@
             display: block;
             height: 100%;
             width: 100%;
-            padding: 0 60px;
-            padding-top: 45vh;
+            // padding: 0 60px;
+            width: 15vw;
+            padding-left: 4vw;
+            padding-top: 40vh;
+            text-transform: uppercase;
         }
         &:first-child {
             border-left: 1px solid rgba(255,255,255,.2);
