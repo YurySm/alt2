@@ -1,0 +1,53 @@
+.footer {
+    padding-top: 172px;
+    background: #fff url('../img/footer/footer-bg.png') 100% 0/cover no-repeat;
+    &__title {
+        margin: 0 auto;
+        max-width: 668px;
+        font-size: 30px;
+        line-height: 120%;
+        color: #18172F;
+        text-align: center;
+    }
+    &__subtitle {
+        margin: 0 auto;
+        max-width: 400px;
+        margin-top: 14px;
+        font-family: 'Calibri';
+        font-size: 15px;
+        line-height: 150%;
+        color: #989898;
+        align-items: center;
+    }
+    &__btn {
+        display: block;
+        width: 200px;
+        height: 50px;
+        margin: 0 auto;
+        margin-top: 47px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 50px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        position: relative;
+        &:hover {
+            span > svg path{
+             fill: #484ce6;
+            }
+        }
+        span {
+           position: absolute;
+           top: 0;
+           right: 19px;
+        }
+
+    }
+    &__wrapper {
+        margin-top: 207px;
+        max-width: 1124px;
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -9,6 +9,7 @@
     transition-property: background-color,color,fill,stroke,border-color,outline;
     transition-duration: .4s;
     transition-timing-function: ease-in;
+
 }
 .fade{animation-name: fade;animation-duration: .7s;}
 @keyframes fade{from{opacity: 0;}to{opacity: 1;}}
@@ -74,9 +75,57 @@ body {
     }
 
 }
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    color: #171A48;
+    span {
+        color: #FFBA00;
+        font-weight: bold;
+    }
+    &-shadow {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
+        color: #FFFFFF;
+        font-size: 100px;
+        line-height: 100px;
+        z-index: 0;
+    }
+}
+.divider {
+    display: block;
+    width: 20px;
+    margin: 0 auto;
+    margin-top: 11px;
+    border: 2px solid #171A48;
+}
+.subtitle {
+    margin-top: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 120%;
+    color: #9797A2;
+    opacity: 0.5;
+    text-align: center;
+}
 
 
 
 @import 'blocks/btns';
 @import 'blocks/header';
 @import 'blocks/hero';
+@import 'blocks/footer.scss';
+
+@import 'blocks/template/contacts.scss';
