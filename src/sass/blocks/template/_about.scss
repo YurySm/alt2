@@ -1,0 +1,20 @@
+.about {
+    padding-top: 126px;
+    padding-bottom: 70px;
+    background-color: #fff;
+    position: relative;
+    &__wrapper {
+        max-width: 1250px;
+    }
+    &__img {
+        margin-right: -50px;
+    }
+    &__text-wrapper {
+        max-width: 500px;
+    }
+}
+.strategy {
+    max-width: 1175px;
+    margin: 0 auto;
+    margin-top: 70px;
+}

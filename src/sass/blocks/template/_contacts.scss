@@ -6,14 +6,6 @@
     &__header {
         box-shadow: 0 0 20px 20px rgba(0,0,0,.03);
     }
-    &__title{
-        &-group {
-            margin: 0 auto;
-            position: relative;
-            width: 597px;
-            padding-top: 41px;
-        }
-    }
     &__wrapper {
         position: relative;
         z-index: 1;
@@ -36,7 +28,7 @@
         &-title {
             position: absolute;
             top: -30px;
-            left: 0;
+            left: 7px;
             font-weight: 300;
             font-size: 64px;
             line-height: 130%;

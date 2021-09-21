@@ -75,6 +75,13 @@ body {
     }
 
 }
+.title-group {
+    margin: 0 auto;
+    position: relative;
+    width: 597px;
+    padding-top: 41px;
+}
+
 .title {
     font-weight: bold;
     font-size: 36px;
@@ -120,6 +127,9 @@ body {
     opacity: 0.5;
     text-align: center;
 }
+.mt-35 {
+    margin-top: 35px !important;
+}
 
 
 
@@ -129,3 +139,4 @@ body {
 @import 'blocks/footer.scss';
 
 @import 'blocks/template/contacts.scss';
+@import 'blocks/template/about.scss';
