@@ -41,6 +41,13 @@
             text-transform: uppercase;
         }
     }
+    &__figure {
+        position: absolute;
+        top: 516px;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
     .circle-top {
         position: absolute;
         top: 0;
@@ -81,6 +88,13 @@
     &__text-wrapper {
         max-width: 563px;
     }
+    &__figure {
+        position: absolute;
+        top: 1199px;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
 }
 .support {
     &__wrapper {
@@ -95,6 +109,13 @@
         margin-right: unset;
         max-width: 654px;
     }
+    &__figure {
+        position: absolute;
+        top: 1801px;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
 }
 .marketing {
     &__wrapper {
@@ -105,6 +126,12 @@
     }
     &__text-wrapper {
         max-width: 600px;
-
+    }
+    &__figure {
+        position: absolute;
+        top: 2363px;
+        left: 0;
+        width: 100%;
+        height: auto;
     }
 }
