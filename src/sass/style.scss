@@ -78,7 +78,7 @@ body {
 .title-group {
     margin: 0 auto;
     position: relative;
-    width: 597px;
+    width: 600px;
     padding-top: 41px;
 }
 
@@ -97,9 +97,11 @@ body {
     }
     &-shadow {
         display: block;
+        width: 100%;
         position: absolute;
         top: 0;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         letter-spacing: 0.1em;
         text-transform: uppercase;
         text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05);
@@ -107,6 +109,7 @@ body {
         font-size: 100px;
         line-height: 100px;
         z-index: 0;
+        text-align: center;
     }
 }
 .divider {
@@ -140,3 +143,4 @@ body {
 
 @import 'blocks/template/contacts.scss';
 @import 'blocks/template/about.scss';
+@import 'blocks/template/services.scss';
