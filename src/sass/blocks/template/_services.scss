@@ -118,6 +118,9 @@
         max-width: 664px;
         // margin-right: 25px;
         padding-left: 78px;
+        & > .contacts__form-wrapp-title {
+            left: 83px;
+        }
 
     }
     &__img {
