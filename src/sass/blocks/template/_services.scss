@@ -1,20 +1,30 @@
 .services {
     padding-top: 126px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     background-color: #fff;
     position: relative;
     .contacts__descr {
         font-size: 15px;
     }
+    &__wrapp-title {
+        left: 127px;
+    }
     &__img {
         margin-right: unset;
+        margin-left: 30px;
+        margin-top: -120px;
     }
     &__wrapper {
-        max-width: 1286px;
+        max-width: 1420px;
+        margin-top: 116px;
     }
     &__text-wrapper {
-        max-width: 600px;
-        margin-right: 32px;
+        max-width: 725px;
+        padding-left: 125px;
+    }
+    &__descr {
+        // width: 600px;
+        margin-top: 26px;
     }
     &__item {
         position: relative;
@@ -72,18 +82,17 @@
         display: block;
         width: 100px;
         height: 200px;
-        background: url('../img/services/bg/dots-rt.png') center center/contain no-repeat;
-
     }
 }
 .desing {
     &__wrapper {
-        margin-top: 77px;
-        max-width: 1350px;
+        margin-top: 89px;
+        max-width: 1242px;
     }
     &__img {
         max-width: 654px;
-        margin-right: -30px;
+        margin-right: -17px;
+        margin-top: -31px;
     }
     &__text-wrapper {
         max-width: 563px;
@@ -95,19 +104,26 @@
         width: 100%;
         height: auto;
     }
+    &__descr {
+        margin-top: 31px;
+    }
 }
 .support {
     &__wrapper {
-        max-width: 1320px;
-        margin-top: 68px;
+        max-width: 1327px;
+        margin-top: 91px;
+        justify-content: space-between;
     }
     &__text-wrapper {
-        max-width: 570px;
-        margin-right: 25px;
+        max-width: 664px;
+        // margin-right: 25px;
+        padding-left: 78px;
+
     }
     &__img {
         margin-right: unset;
         max-width: 654px;
+        margin-top: -23px;
     }
     &__figure {
         position: absolute;
@@ -119,19 +135,24 @@
 }
 .marketing {
     &__wrapper {
-        max-width: 1400px;
+        max-width: 1240px;
+        margin-top: 100px;
     }
     &__img {
         margin-right: -20px;
+        margin-top: -17px;
     }
     &__text-wrapper {
         max-width: 600px;
     }
     &__figure {
         position: absolute;
-        top: 2363px;
+        top: 2293px;
         left: 0;
         width: 100%;
         height: auto;
+    }
+    &__descr {
+        margin-top: 26px;
     }
 }

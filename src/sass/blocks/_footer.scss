@@ -56,6 +56,13 @@
         font-size: 14px;
         line-height: 100%;
         text-transform: capitalize;
+        &:nth-child(2) {
+            margin-left: -102px;
+        }
+        &:nth-child(3) {
+            padding-left: 28px;
+        }
+
         &_title {
             font-weight: bold;
             // align-items: center;
@@ -81,7 +88,7 @@
         &_list {
             margin-top: 23px;
             & > li {
-                margin-bottom: 25px;
+                margin-bottom: 21px;
                 & > a {
                     color: #989898;
                 }
@@ -105,5 +112,25 @@
                 }
             }
         }
+    }
+    &__copy {
+        max-width: 1169px;
+        height: 73px;
+        margin: 0 auto;
+        margin-top: 17px;
+        padding: 0 29px;
+        border-top: 1px solid rgba(151, 151, 162, .1);;
+        font-family: 'Calibri';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #9797A2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
