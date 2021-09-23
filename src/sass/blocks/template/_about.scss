@@ -4,17 +4,84 @@
     background-color: #fff;
     position: relative;
     &__wrapper {
-        max-width: 1250px;
+        max-width: 1272px;
+        margin-top: 118px;
     }
     &__img {
-        margin-right: -50px;
+        margin-right: -38px;
+        margin-top: -110px;
     }
     &__text-wrapper {
-        max-width: 500px;
+        max-width: 487px;
+        // padding-top: 35px;
+    }
+    &__descr {
+        margin-top: 30px;
+        font-size: 15px;
     }
 }
 .strategy {
-    max-width: 1175px;
+    max-width: 1172px;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 95px;
+    &__descr {
+        margin-top: 35px;
+        max-width: 442px;
+        font-size: 15px;
+        line-height: 180%;
+    }
+    &__items {
+        margin-top: 86px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        min-height: 295px;
+        background-position: top left;
+        background-repeat: no-repeat;
+        width: 33%;
+        // flex: 1 1 1 100%;
+        &_1 {
+            width: 34%;
+            padding-top: 77px;
+            padding-left: 107px;
+            background-image: url('../img/about/strategy/item-1.png');
+        }
+        &_2 {
+            width: 34%;
+            padding-top: 125px;
+            padding-left: 128px;
+            background-image: url('../img/about/strategy/item-2.png');
+        }
+        &_3 {
+            width: 32%;
+            padding-top: 127px;
+            padding-left: 129px;
+            background-image: url('../img/about/strategy/item-3.png');
+        }
+        &_title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 100%;
+            color: #18172F;
+            span {
+                color: #484CE6;
+                font-weight: bold;
+                font-size: 21px;
+            }
+        }
+        &_text {
+            margin-top: 15px;
+            font-family: 'Calibri';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 180%;
+            color: #9797A2;
+            &_3 {
+                max-width: 250px;
+            }
+        }
+    }
 }
