@@ -76,6 +76,9 @@
             margin-top: 27px;
             color: #989898;
             font-family: 'Calibri';
+            & > span {
+                text-transform: none;
+            }
         }
         &_divider {
             margin-top: 15px;

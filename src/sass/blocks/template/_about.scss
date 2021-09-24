@@ -85,3 +85,28 @@
         }
     }
 }
+.team {
+    margin-top: 115px;
+    &__wrapper {
+        max-width: 1210px;
+        // justify-content: space-between;
+    }
+    &__img {
+        margin-left: -213px;
+        margin-top: -69px;
+        margin-right: 0;
+        width: 692px;
+        height: auto;
+    }
+    &__text-wrapper {
+        max-width: 500px;
+        margin-left: 143px;
+    }
+    &__descr {
+        margin-top: 50px;
+        font-size: 15px;
+    }
+    &__descr {
+        font-size: 15px;
+    }
+}

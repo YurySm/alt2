@@ -32,6 +32,10 @@
         right: 210px;
         height: 100vh;
         background: #18172F;
+        &.other-page {
+            left: 0;
+            right: 0;
+        }
     }
     &__nav-img {
         position: absolute;
