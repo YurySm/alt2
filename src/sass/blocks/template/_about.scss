@@ -19,6 +19,23 @@
         margin-top: 30px;
         font-size: 15px;
     }
+    .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .bg-top {
+        position: absolute;
+        top: 366px;
+        left: 0;
+        max-width: 100%;
+    }
+    .bg-mid {
+        position: absolute;
+        top: 1516px;
+        left: 0;
+        max-width: 100%;
+    }
 }
 .strategy {
     max-width: 1172px;
