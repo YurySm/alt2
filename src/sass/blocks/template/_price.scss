@@ -1,5 +1,6 @@
 .price {
     padding-top: 126px;
+    padding-bottom: 40px;
     background-color: #fff;
     .title-group {
         width: 865px;
@@ -67,12 +68,12 @@
             justify-content: space-between;
             // align-items: flex-end;
             &_title {
-                padding-top: 50px;
+                padding-top: 30px;
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
                 flex-direction: column;
-                padding-right: 60px;
+                padding-right: 66px;
                 & > .what {
                     font-family: 'Calibri';
                     font-style: normal;
@@ -99,7 +100,7 @@
                 }
             }
             &.item-1 {
-                width: 32%;
+                width: 33%;
                 padding: 20px 0 0 85px;
                 margin-right: 30px;
                 background: url('/../img/price/items/item-1.png') top left  no-repeat;
@@ -114,11 +115,11 @@
                 }
             }
             &.item-3 {
-                width: 37%;
+                width: 36%;
                 padding: 20px 0 0 125px;
                 background: url('/../img/price/items/item-3.png') top left  no-repeat;
                 & > .price__packages_item_title {
-                    padding-right: 40px;
+                    padding-right: 55px;
                 }
             }
             &_list {
@@ -150,6 +151,9 @@
                 }
                 &.conversion_list li::before {
                     background: #484CE6;
+                }
+                &.conversion_list {
+                    margin-top: 61px;
                 }
             }
             &_text {
@@ -183,15 +187,22 @@
         width: 1170px;
         min-height: 615px;
         margin: 0 auto;
-        margin-top: 25px;
+        margin-top: 84px;
         border-radius: 5px;
         background: #FBFBFB;
+        .contacts__descr {
+            font-size: 15px;
+            margin-top: 31px;
+        }
         &_header {
             position: relative;
             z-index: 1;
-            padding: 38px 100px 0 0;
+            padding: 70px 100px 0 0;
             background: url('/../img/price/faq-img.png') 60px 20px no-repeat;
-
+        }
+        &__text-wrapper {
+            max-width: 470px;
+            flex: 1 1 100%;
         }
         .lines {
             position: absolute;
@@ -213,7 +224,7 @@
             position: relative;
             z-index: 1;
             padding: 0px 70px 60px;
-            margin-top: 55px;
+            margin-top: 48px;
             .dot {
                 position: absolute;
                 width: 15px;
@@ -247,8 +258,8 @@
             }
             .trigger {
                 position: absolute;
-                right: 18px;
-                top: 18px;
+                right: 24px;
+                top: 17px;
                 width: 14px;
                 height: 14px;
                 cursor: pointer;
@@ -278,6 +289,30 @@
 
         }
     }
+    .services {
+        &__wrapper {
+            margin-top: 68px;
+        }
+        &__text-wrapper {
+            padding-left: 0;
+            max-width: 610px;
+        }
+        &__descr {
+            font-size: 15px;
+            line-height: 160%;
+        }
+        &__item {
+            margin-top: 47px;
+        }
+        &__img {
+            top: 57px;
+            right: -85px;
+        }
+    }
+
+
+
+
     .circle-tr {
         position: absolute;
         top: 0;
