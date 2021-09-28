@@ -67,6 +67,7 @@
         }
     }
     &__form {
+        position: relative;
         margin-top: 22px;
         input, textarea, select {
             width: 100%;
@@ -86,6 +87,25 @@
         input {
             height: 51px;
         }
+        .input-dot {
+            position: relative;
+            display: block;
+        }
+        .input-dot::after {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 35px;
+            right: 18px;
+            z-index: 10000;
+            background: url('../img/contacts/yellow.svg') center center no-repeat;
+        }
+        .input-dot:first-child::after {
+            background: url('../img/contacts/blue.svg') center center no-repeat;
+        }
+        
         textarea {
             height: 102px;
             resize: none;
@@ -143,19 +163,6 @@
             }
         }
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .circle {
         position: absolute;
