@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+@import 'libs/choices/base';
+@import 'libs/choices/choices';
 @import 'libs/style_my_normolize.css';
+
+
 * {
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;

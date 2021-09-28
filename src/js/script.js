@@ -34,4 +34,14 @@ document.addEventListener('DOMContentLoaded', () => {
             },600);
         });
     });
+
+    try{
+        const element = document.querySelector('#services');
+        const choices = new Choices(element, {
+            searchEnabled: false,
+            shouldSort: false,
+            itemSelectText: '',
+            placeholder: false,
+        });
+    }catch(e){}
 });

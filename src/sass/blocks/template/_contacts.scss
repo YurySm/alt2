@@ -95,8 +95,12 @@
             padding-left: 39px;
             position: relative;
             margin-top: 17px;
-            display: block;
+            display: flex;
             cursor: pointer;
+            color: #989898;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 100%;
             span {
                 display: block;
                 width: 20px;
