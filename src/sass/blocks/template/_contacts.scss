@@ -83,6 +83,9 @@
             &::placeholder {
                 color: #989898;
             }
+            &:focus {
+                background: #eaeaea;
+            }
         }
         input {
             height: 51px;
