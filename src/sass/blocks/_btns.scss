@@ -1,14 +1,16 @@
 .btn {
     width: 138px;
     height: 42px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
+    line-height: 40px;
     color: #FFFFFF;
     background: #484CE6;
     border-radius: 5px;
     border: 2px solid transparent;
+    text-align: center;
     &:hover {
         background: #FFFFFF;
         color: #484CE6;
