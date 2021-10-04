@@ -35,6 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    new WOW().init();
+
     try{
         const element = document.querySelector('#services');
         const choices = new Choices(element, {
@@ -48,39 +50,40 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // tabs
-    const tabs__btns = document.querySelectorAll('.tabs__btn'),
+    try{
+        const tabs__btns = document.querySelectorAll('.tabs__btn'),
           tabs__content = document.querySelectorAll('.tabs__content');
 
-    tabs__content.forEach(content => {
-        content.classList.add('fadeOut');
-        content.classList.remove('fade');
-        content.style.display = 'none';
-    });
+        tabs__content.forEach(content => {
+            content.classList.add('fadeOut');
+            content.classList.remove('fade');
+            content.style.display = 'none';
+        });
 
-    tabs__content[0].classList.remove('fadeOut');
-    tabs__content[0].classList.add('fade');
-    tabs__content[0].style.display = 'flex';
+        tabs__content[0].classList.remove('fadeOut');
+        tabs__content[0].classList.add('fade');
+        tabs__content[0].style.display = 'flex';
 
-    tabs__btns.forEach((btn, i )=> {
-        btn.addEventListener('click', e => {
-            e.preventDefault();
-            tabs__btns.forEach( btn => {
-                btn.classList.remove('tabs__btn_active');
+        tabs__btns.forEach((btn, i )=> {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                tabs__btns.forEach( btn => {
+                    btn.classList.remove('tabs__btn_active');
+                })
+                if(btn === e.target) {
+                    btn.classList.add('tabs__btn_active');
+                    tabs__content.forEach(content => {
+                        content.classList.add('fadeOut');
+                        content.classList.remove('fade');
+                        content.style.display = 'none';     
+                    });
+                }
+                tabs__content[i].classList.remove('fadeOut');
+                tabs__content[i].classList.add('fade');
+                tabs__content[i].style.display = 'flex';
             })
-            if(btn === e.target) {
-                btn.classList.add('tabs__btn_active');
-                tabs__content.forEach(content => {
-                    content.classList.add('fadeOut');
-                    content.classList.remove('fade');
-                    content.style.display = 'none';     
-                });
-            }
-            tabs__content[i].classList.remove('fadeOut');
-            tabs__content[i].classList.add('fade');
-            tabs__content[i].style.display = 'flex';
         })
-    })
-
+    } catch(e){}
     //tabs selects
     const models = document.querySelectorAll('#model');
 
