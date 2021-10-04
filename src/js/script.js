@@ -35,7 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    new WOW().init();
+    try {
+        new WOW().init();
+    } catch(e){}
 
     try{
         const element = document.querySelector('#services');
