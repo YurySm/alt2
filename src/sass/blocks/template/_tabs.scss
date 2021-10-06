@@ -22,7 +22,7 @@
         text-transform: uppercase;
         color: #989898;
         background-color: transparent;
-        border-bottom: 4px solid rgba(152, 152, 152, .2);
+        border-bottom: 2px solid rgba(152, 152, 152, .2);
         &_active {
             border-color: #484CE6;
             color: #18172F;
@@ -108,6 +108,7 @@
             border: 1px solid #DFDFDF;
             &::placeholder {
                 color: #A9A9A9;
+                font-size: 13px;
             }
             &:focus {
                 background: #eaeaea;
@@ -128,6 +129,9 @@
             resize: none;
             height: 100px;
             margin-bottom: 24px;
+            &::placeholder {
+                font-size: 13px;
+            }
         }
         &_btn {
             width: 100%;
