@@ -77,19 +77,24 @@
             font-family: 'Calibri';
             font-style: normal;
             font-weight: normal;
-            font-size: 14px;
+            font-size: 15px;
             line-height: 120%;
             margin-top: 17px;
             &::placeholder {
                 color: #989898;
+                font-size: 13px;
             }
             &:focus {
                 background: #eaeaea;
             }
         }
-        input {
+        input, .choices__inner {
             height: 51px;
+            background: #fbfbfb;
+            border: 1px solid #dfdfdf;
+            border-radius: 4px;
         }
+
         .input-dot {
             position: relative;
             display: block;
@@ -113,6 +118,9 @@
             height: 102px;
             resize: none;
             padding-top: 13px;
+            background: #fbfbfb;
+            border: 1px solid #dfdfdf;
+            border-radius: 4px;
         }
         label {
             padding-left: 39px;

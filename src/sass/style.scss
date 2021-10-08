@@ -12,7 +12,6 @@
     transition-property: background-color,color,fill,stroke,border-color,outline;
     transition-duration: .4s;
     transition-timing-function: ease-in;
-
 }
 .fade{animation-name: fade;animation-duration: .7s;}
 @keyframes fade{from{opacity: 0;}to{opacity: 1;}}
@@ -25,6 +24,7 @@ ul {
 body {
     background: #18172F;
     position: relative;
+    overflow-x: hidden;
 }
 .section-number {
     position: absolute;
