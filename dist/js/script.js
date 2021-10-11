@@ -102,5 +102,45 @@ document.addEventListener('DOMContentLoaded', () => {
     
     });
 
+    //faq
+    const btnsFaq = document.querySelectorAll('.price__faq_item_btn'),
+          textFaqItem = document.querySelectorAll('.price__faq_item_text');
+
+    btnsFaq.forEach((btn, i)=> {
+        btn.addEventListener('click', () => {
+            textFaqItem.forEach(text => {
+                text.classList.add('fadeOut');
+                btn.parentNode.querySelector('.trigger').style.transform = 'rotate(0deg)';
+                text.classList.remove('fade');
+                text.style.display = 'none';
+            });
+            btnsFaq.forEach(btn=> {
+                btn.removeAttribute('data-active', '');
+                btn.parentNode.querySelector('.trigger').style.transform = 'rotate(0deg)';
+            });
+
+            
+            textFaqItem[i].classList.add('fade');
+            textFaqItem[i].style.display = 'block';
+            
+            if(btn.hasAttribute('data-active')){
+                btn.removeAttribute('data-active', '');
+                textFaqItem[i].classList.remove('fade');
+                textFaqItem[i].classList.add('fadeOut');
+                btn.parentNode.querySelector('.trigger').style.transform = 'rotate(0deg)';
+                setTimeout(() => {
+                    textFaqItem[i].style.display = 'none';
+                }, 500);
+            } else {
+                btn.setAttribute('data-active', '');
+                textFaqItem[i].classList.remove('fadeOut');
+                textFaqItem[i].classList.add('fade');
+                textFaqItem[i].style.display = 'block';
+                btn.parentNode.querySelector('.trigger').style.transform = 'rotate(45deg)';
+            }
+
+        })
+    })
+
 
 });
