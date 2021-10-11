@@ -115,7 +115,8 @@
                 background: #eaeaea;
             }
         }
-        label[for="user_land"] {
+        label[for="user_land"],
+        label[for="user_sites"]{
             margin-top: 20px;
         }
         .choices__inner {

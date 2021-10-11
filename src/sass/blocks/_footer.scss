@@ -68,8 +68,10 @@
 
         &_title {
             font-weight: bold;
+            font-family: 'Calibri';
             // align-items: center;
             // letter-spacing: 0.05em;
+            color:#18172F;
             &.last {
                 text-align: right;
             }
@@ -100,6 +102,9 @@
                 & > a {
                     font-family: 'Calibri';
                     color: #989898;
+                    &:hover {
+                        color: #18172f;
+                    }
                 }
             }
             &.social {

@@ -415,8 +415,15 @@
 .choices__item--disabled {
   display: none;
 }
-.choices__list > * {
-  color: #989898;
+.choices__item {
+  padding-top: 5px;
+}
+.choices__item.choices__item--choice.choices__item--selectable {
+  color: #18172F;
+  border-bottom: 1px solid #A9A9A9;
+}
+.choices__list.choices__list--dropdown{
+  margin-top: 0px;
 }
 .choices__list--dropdown .choices__item {
   padding-left: 20px;

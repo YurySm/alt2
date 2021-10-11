@@ -139,9 +139,11 @@
                         <input type="tel" id="user_phone" placeholder="Номер телефона">
 
                         <label for="user_email">E-mail<span>*</span></label>
-                        <input type="email" id="user_email" placeholder="Номер телефона">
+                        <input type="email" id="user_email">
+                        <label for="user_company">Название компании</label>
+                        <input type="email" id="user_company">
 
-                        <label for="model">Модель бизнеса<span>*</span></label>
+                        <label for="model">Основная задача<span>*</span></label>
                         <select name="model" id="model">
                             <option value="Выбирите из списка" selected disabled hidden>Выбирите из списка</option>
                             <option value="Установка шаблона">Установка шаблона</option>
@@ -154,11 +156,8 @@
                         </option>
                         </select>
 
-                        <label for="user_land">Ваша местоположение</label>
-                        <input type="text" id="user_land" placeholder="Страна">
-
-                        <label for="user_competitors">Конкуренты</label>
-                        <textarea type="text" id="user_competitors" placeholder="Есть ли какие-либо сайты, которые вы бы сочли своими конкурентами? Если да, пожалуйста, перечислите их ниже"></textarea>
+                        <label for="user_sites">Сайты</label>
+                        <textarea type="text" id="user_sites" placeholder="Есть ли какие-либо сайты, которые вам нравяться? "></textarea>
 
                         <label for="user_coments">Ваши комментарии<span>*</span></label>
                         <textarea type="text" id="user_coments" placeholder="Любая информация, которая будет актуальна для нас"></textarea>
@@ -179,22 +178,23 @@
                         <input type="tel" id="user_phone" placeholder="Номер телефона">
 
                         <label for="user_email">E-mail<span>*</span></label>
-                        <input type="email" id="user_email" placeholder="Номер телефона">
+                        <input type="email" id="user_email">
 
-                        <label for="model">Модель бизнеса<span>*</span></label>
-                        <select name="model" id="model">
-                            <option value="Выбирите из списка">Выбирите из списка</option>
-                        </select>
+                        <label for="user_company">Название компании</label>
+                        <input type="text" id="user_company">
+                       
 
-                        <label for="user_land">Ваша местоположение</label>
-                        <input type="text" id="user_land" placeholder="Страна">
-
-                        <label for="user_competitors">Конкуренты</label>
-                        <textarea type="text" id="user_competitors" placeholder="Есть ли какие-либо сайты, которые вы бы сочли своими конкурентами? Если да, пожалуйста, перечислите их ниже"></textarea>
+                        <label for="user_site">Ваш сайт</label>
+                        <input type="text" id="user_site" placeholder="https://">
 
 
-                        <label for="user_coments">Ваши комментарии<span>*</span></label>
-                        <textarea type="text" id="user_coments" placeholder="Любая информация, которая будет актуальна для нас"></textarea>
+                        <label for="user_works">Основные работы<span>*</span></label>
+                        <textarea type="text" id="user_works" placeholder="Какие работы вам необходимы? Разработка E-mail маркетинга, настройка Facebook или просто наполнение контентом. А может быть что-то иное..."></textarea>
+
+                        <label for="user_coments">Немного о вашем бизнесе</label>
+                        <textarea type="text" id="user_coments" placeholder="Расскажите в какие страны Вы хотите продавать... В чем особенность вашего продукта и целевой аудитории?"></textarea>
+
+
 
                         <button class="btn tabs__form_btn">Отправить</button>
                     </form>
@@ -212,22 +212,23 @@
                         <input type="tel" id="user_phone" placeholder="Номер телефона">
 
                         <label for="user_email">E-mail<span>*</span></label>
-                        <input type="email" id="user_email" placeholder="Номер телефона">
+                        <input type="email" id="user_email">
 
-                        <label for="model">Модель бизнеса<span>*</span></label>
-                        <select name="model" id="model">
-                            <option value="Выбирите из списка">Выбирите из списка</option>
-                        </select>
+                        <label for="user_company">Название компании</label>
+                        <input type="text" id="user_company">
+                       
 
-                        <label for="user_land">Ваша местоположение</label>
-                        <input type="text" id="user_land" placeholder="Страна">
-
-                        <label for="user_competitors">Конкуренты</label>
-                        <textarea type="text" id="user_competitors" placeholder="Есть ли какие-либо сайты, которые вы бы сочли своими конкурентами? Если да, пожалуйста, перечислите их ниже"></textarea>
+                        <label for="user_site">Ваш сайт</label>
+                        <input type="text" id="user_site" placeholder="https://">
 
 
-                        <label for="user_coments">Ваши комментарии<span>*</span></label>
+                        <label for="user_works">Описание<span>*</span></label>
+                        <textarea type="text" id="user_works" placeholder="Расскажите какие функции должно выполнять APP. Какие задачи оно должно решать?"></textarea>
+
+                        <label for="user_coments">Ваши комментарии</label>
                         <textarea type="text" id="user_coments" placeholder="Любая информация, которая будет актуальна для нас"></textarea>
+
+
 
                         <button class="btn tabs__form_btn">Отправить</button>
                     </form>
@@ -282,10 +283,10 @@
                 <h3 class="footer__item_title">Меню</h3>
                 <span class="footer__item_divider"></span>
                 <ul class="footer__item_list">
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Цены</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="price.html">Цены</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
 

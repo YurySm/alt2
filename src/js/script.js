@@ -115,7 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 text.style.display = 'none';
             });
             btnsFaq.forEach(btn=> {
-                btn.removeAttribute('data-active', '');
                 btn.parentNode.querySelector('.trigger').style.transform = 'rotate(0deg)';
             });
 
@@ -132,6 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     textFaqItem[i].style.display = 'none';
                 }, 500);
             } else {
+                btnsFaq.forEach(btn=> {
+                    btn.removeAttribute('data-active', '');
+                    btn.parentNode.querySelector('.trigger').style.transform = 'rotate(0deg)';
+                });
                 btn.setAttribute('data-active', '');
                 textFaqItem[i].classList.remove('fadeOut');
                 textFaqItem[i].classList.add('fade');
