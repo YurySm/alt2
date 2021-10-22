@@ -43,6 +43,9 @@
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.03);
         // opacity: 0.03;
+        &_mob {
+            display: none;
+        }
     }
     &__bg {
         display: block;

@@ -8,6 +8,7 @@
         max-width: 963px;
         margin: 0 auto;
         margin-top: 74px;
+        position: relative;
     }
     &__btns {
         display: flex;
@@ -35,14 +36,19 @@
         &_ok {
             width: 100%;
             margin-top: 49px;
-            min-height: 832px;
+            min-height: 880px;
             padding-top: 109px;
             position: relative;
             border: 1px solid #F4F4F4;
             box-sizing: border-box;
             border-radius: 15px;
-            position: relative;
+            // position: relative;
+            position: absolute;
+            top: 43px;
+            left: 0;
+            background-color: #fff;
             z-index: 2;
+            display: none;
             .ok {
                 &__close {
                     position: absolute;
@@ -142,8 +148,7 @@
             font-family: 'Calibri';
             font-weight: bold;
             font-size: 15px;
-            line-height: 100%;
-            
+            line-height: 100%; 
         }
     }
     &__company {

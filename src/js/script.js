@@ -145,5 +145,19 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-
+    function showModal() {
+        const modal = document.querySelector('.tabs__content_ok'),
+              close = modal.querySelector('.ok__close');
+        
+        modal.classList.remove('fadeOut');
+        modal.classList.add('fade');
+        modal.style.display = 'block';
+        close.addEventListener('click', () => {
+                modal.classList.remove('fade');
+                modal.classList.add('fadeOut');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 500);
+        })
+    }
 });

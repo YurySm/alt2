@@ -14,6 +14,9 @@
         border: none;
         background-color: transparent;
         margin-right: 105px;
+        svg.mob {
+            display: none;
+        }
     }
     &__close {
         display: none;

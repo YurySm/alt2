@@ -1,0 +1,119 @@
+@media (max-width: 540px) {
+    .header {
+        background: #18172F;
+        padding: 0 12px;
+        height: 50px;
+        &__humburger {
+            margin-right: 0;
+            svg.mob {
+                display: inline;
+            }
+            svg.desk {
+                display: none;
+            }
+
+        }
+        &__logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 134px;
+        }
+        .btn__header {
+            display: none;
+        }
+        &__menu {
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        &__nav {
+            &-img {
+                display: none;
+            }
+            &-items {
+                flex-direction: column;
+            }
+            &-item {
+                &::before,
+                &::after {
+                    display: none !important;
+                }
+                height: 83px;
+                justify-content: flex-start;
+                border-bottom: 1px solid rgba(255,255,255,.2);
+                border-top: 1px solid rgba(255,255,255,.2);
+                margin-bottom: -1px;
+                & > a {
+                    padding: 0;
+                    padding-left: 27px;
+                    position: relative;
+                    width: 100%;
+                    padding-top: 20px;
+                    & > span {
+                        position: absolute;
+                        right: 27px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+
+    .hero {
+        .section-number {
+            display: none;
+        }
+        .counter-number {
+            display: none;
+        }
+        .counter-dots {
+            display: none;
+        }
+        &__bg {
+            left: unset;
+            right: -20px;
+            top: 130px;
+            width: 100%;
+        }
+        &__wrapper {
+            width: 283px;
+        }
+        &__title {
+            font-size: 15px;
+            line-height: 130%;
+            margin-top: 72vh;
+        }
+        &__subtitle {
+            display: none;
+        }
+        &__descr {
+            display: none;
+            &_mob {
+                display: block;
+                margin-top: 77px;
+                text-align: center; 
+            }
+        }
+    }
+
+    .about {
+        padding-top: 67px;
+        max-width: 100%;
+        .title-group {
+            display: none;
+        }
+        &__wrapper {
+            flex-direction: column;
+            margin: 0;
+        }
+        &__img {
+            display: none;
+            &-mob {
+                display: inline;
+            }
+        }
+    }
+}

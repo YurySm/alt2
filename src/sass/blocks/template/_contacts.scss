@@ -89,10 +89,16 @@
             }
         }
         input, .choices__inner {
-            height: 51px;
             background: #fbfbfb;
             border: 1px solid #dfdfdf;
             border-radius: 4px;
+            height: 51px;
+        }
+        input {
+            height: 51px;
+        }
+        .choices__item.choices__item--selectable {
+            line-height: 1;
         }
 
         .input-dot {
