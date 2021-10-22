@@ -27,6 +27,7 @@
             width: 100%;
             top: 0;
             left: 0;
+            background: linear-gradient(to right, #18172F 80%, #484CE6 10%);
         }
         &__nav {
             &-img {
@@ -40,11 +41,21 @@
                 &::after {
                     display: none !important;
                 }
+                &:first-child {
+                    border: none;
+                }
                 height: 83px;
                 justify-content: flex-start;
+                border: none;
                 border-bottom: 1px solid rgba(255,255,255,.2);
                 border-top: 1px solid rgba(255,255,255,.2);
                 margin-bottom: -1px;
+                &.price-item > a > b {
+                    color: #fff;
+                }
+                & > a.support-item {
+                    display: block;
+                }
                 & > a {
                     padding: 0;
                     padding-left: 27px;
@@ -58,6 +69,7 @@
                         transform: translateY(-50%);
                     }
                 }
+
             }
         }
     }

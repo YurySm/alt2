@@ -61,6 +61,9 @@
         justify-content: center;
         align-items: center;
         border-right: 1px solid rgba(255,255,255,.2);
+        & > a.support-item {
+            display: none;
+        }
         a {
             display: block;
             height: 100%;
