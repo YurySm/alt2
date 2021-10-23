@@ -343,6 +343,7 @@
 
     .services {
         padding-top: 50px;
+        padding-bottom: 0;
         .title-group {
             display: none;
         }
@@ -359,8 +360,10 @@
         }
         &__img {
             margin: 0;
-            width: 100%;
             min-height: unset;
+            &>img {
+                width: 100%;
+            }
         }
         &__text-wrapper {
             padding: 20px 15px;
@@ -375,9 +378,75 @@
     .design {
         &__wrapper {
             flex-direction: column;
+            margin-top: 0;
         }
         &__img {
             min-height: unset;
+            width: 100%;
+            margin: 0;
+            &>img {
+                width: 100%;
+            }
+        }
+        &__text-wrapper {
+            padding: 0 13px;
+            padding-top: 24px;
+            margin-top: 20px;
+            & > .contacts__form-wrapp-title{
+                left: 20px;
+            }
+        }
+        &__descr {
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+    .support { 
+        &__wrapper {
+            margin-top: 30px;
+            flex-direction: column-reverse;
+        }
+        &__text-wrapper {
+            padding: 0 13px;
+            padding-top: 24px;
+            & > .contacts__form-wrapp-title {
+                left: 18px;
+            }
+        }
+        &__img {
+            min-height: unset;
+            width: 100%;
+            margin: 0;
+            &>img {
+                width: 100%;
+            }
+        }
+    }
+
+    .marketing {
+        &__wrapper {
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        &__img {
+            min-height: unset;
+            width: 100%;
+            margin: 0;
+            &>img {
+                width: 100%;
+            }
+        }
+        &__text-wrapper {
+            padding: 25px 12px 0;
+            .contacts__form-wrapp-title {
+                left: 17px;
+            }
+        }
+        &__descr {
+            &:last-child{
+                display: none;
+            }
         }
     }
 
