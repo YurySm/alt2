@@ -80,6 +80,20 @@
         &__subtitle {
             display: none;
         }
+        &__wrapper {
+            flex-wrap: wrap;
+            margin-top: 50px;
+            padding: 0 15px;
+        }
+        &__item {
+            width: 50%;
+            &:nth-child(2) {
+                margin-left: 0;
+            }
+            &:first-child {
+                display: none;
+            }
+        }
     }
 
     .hero {
@@ -152,10 +166,18 @@
             flex-direction: column;
             margin: 0;
         }
+        // &__img {
+        //     display: none;
+        //     &_mob {
+        //         display: none;
+        //     }
+        // }
         &__img {
             display: none;
-            &-mob {
-                display: inline;
+            &_mob {
+                display: inline-block;
+                width: 100%;
+                height: auto;
             }
         }
         .strategy {
