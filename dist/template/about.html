@@ -99,7 +99,7 @@
         </div>
 
 
-        <!-- <div class="strategy">
+        <div class="strategy">
             <div class="contacts__form-wrapp about__text-wrapper wow animate__animated animate__fadeInUp">
                 <div class="contacts__form-wrapp-title">Altetsa</div>
                 <h2 class="contacts__title">
@@ -131,11 +131,16 @@
                     </p>
                 </div>
             </div>
-        </div> -->
+        </div>
 
-        <!-- <div class="team">
+        <div class="team">
             <div class="contacts__wrapper team__wrapper">
-                <img src="../img/about/team-img.png" alt="" class="contacts__img team__img wow animate__animated animate__fadeInBottomLeft">
+                <picture class="contacts__img team__img">
+                    <source media="(min-width: 541px)" srcset="../img/about/team-img.png">
+                    <source media="(max-width: 540px)" srcset="../img/about/team-bg-mob.png">
+                    <img src="../img/about/team-img.png" alt="" >
+                </picture>
+                <!-- <img src="../img/about/team-img.png" alt="" class="contacts__img team__img wow animate__animated animate__fadeInBottomLeft"> -->
                 <div class="contacts__form-wrapp team__text-wrapper wow animate__animated animate__fadeInBottomRight">
                     <div class="contacts__form-wrapp-title team__wrapp-title">Altetsa</div>
                     <h2 class="contacts__title">
@@ -166,7 +171,7 @@
                     </ul>
                 </div>
             </div>
-        </div> -->
+        </div>
 
             <!-- <img src="../img/about/circli-lt.png" alt="circle" class="circle">
             <img src="../img/about/about-top.png" alt="background" class="bg-top">

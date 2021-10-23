@@ -14,9 +14,6 @@
         border: none;
         background-color: transparent;
         margin-right: 105px;
-        svg.mob {
-            display: none;
-        }
     }
     &__close {
         display: none;
@@ -24,6 +21,10 @@
         background-color: transparent;
         margin-right: 105px;
         padding-right: 11px;
+        z-index: 100;
+        & > picture {
+            width: 15px;
+        }
     }
     &__menu {
         display: none;
