@@ -19,25 +19,32 @@
 <body>
     <header class="header contacts__header">
         <button class="header__humburger">
-            <svg width="33" height="18" viewBox="0 0 33 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="33" height="2" fill="#18172F"/>
-                <rect y="16" width="25" height="2" fill="#18172F"/>
-                <rect y="8" width="18" height="2" fill="#18172F"/>
-            </svg>
+            <picture>
+                <source media="(min-width: 541px)" srcset="../icons/humbB.svg">
+                <source media="(max-width: 540px)" srcset="../icons/humb-mob-dark.svg">
+                <img src="../icons/humburger.svg" alt="">
+            </picture>    
         </button>
         <button class="header__close">
-            <svg width="22" height="22" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="1.53979" width="33" height="2" transform="rotate(45 1.53979 0)" fill="#18172F"/>
-                <rect x="0.125488" y="23.3346" width="33" height="2" transform="rotate(-45 0.125488 23.3346)" fill="#18172F"/>
-            </svg>
+            <picture>
+                <source media="(min-width: 541px)" srcset="../icons/close.svg">
+                <source media="(max-width: 540px)" srcset="../icons/close-mob.svg">
+                <img src="../icons/close.svg" alt="">
+            </picture>
         </button>
         <a href="../index.html" class="header__logo">
-            <img src="../img/header/logoB.svg" alt="Altesta">
+            <picture>
+                <source media="(min-width: 1440px)" srcset="../img/header/logoB.svg">
+                <source media="(max-width: 540px)" srcset="../img/header/logo-temp.svg">
+
+                <img src="../img/header/logoB.svg" alt="Altesta">
+            </picture>
+            
         </a>
-        <a href="tabs.html" class="btn btn__header">
+        <a href="template/tabs.html" class="btn btn__header">
             Let's Work Together
         </a>
-        <nav class="header__menu  other-page">
+        <nav class="header__menu">
             <ul class="header__nav-items">
                 <li class="header__nav-item">
                     <a href="about.html"><b>О нас</b> <span><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +56,7 @@
                         <path d="M11.8366 3.7344L8.26556 0.163407C8.04769 -0.0544689 7.69434 -0.0544689 7.47646 0.163407C7.25854 0.381327 7.25854 0.734588 7.47646 0.952508L10.0949 3.57099L0.557968 3.57099C0.249836 3.57099 0 3.82082 0 4.12896C0 4.43704 0.249836 4.68692 0.557968 4.68692L10.0949 4.68692L7.47655 7.3054C7.25863 7.52332 7.25863 7.87658 7.47655 8.0945C7.58547 8.20338 7.72831 8.25792 7.8711 8.25792C8.0139 8.25792 8.15669 8.20338 8.26565 8.0945L11.8366 4.52351C12.0545 4.30559 12.0545 3.95232 11.8366 3.7344Z" fill="white"/>
                         </svg></span> <br> Skills</a>
                 </li>
-                <li class="header__nav-item">
+                <li class="header__nav-item  price-item">
                     <a href="price.html"><b>Цены</b> <span><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M11.8366 3.7344L8.26556 0.163407C8.04769 -0.0544689 7.69434 -0.0544689 7.47646 0.163407C7.25854 0.381327 7.25854 0.734588 7.47646 0.952508L10.0949 3.57099L0.557968 3.57099C0.249836 3.57099 0 3.82082 0 4.12896C0 4.43704 0.249836 4.68692 0.557968 4.68692L10.0949 4.68692L7.47655 7.3054C7.25863 7.52332 7.25863 7.87658 7.47655 8.0945C7.58547 8.20338 7.72831 8.25792 7.8711 8.25792C8.0139 8.25792 8.15669 8.20338 8.26565 8.0945L11.8366 4.52351C12.0545 4.30559 12.0545 3.95232 11.8366 3.7344Z" fill="white"/>
                         </svg></span> <br> Price</a>
@@ -59,6 +66,16 @@
                         <path d="M11.8366 3.7344L8.26556 0.163407C8.04769 -0.0544689 7.69434 -0.0544689 7.47646 0.163407C7.25854 0.381327 7.25854 0.734588 7.47646 0.952508L10.0949 3.57099L0.557968 3.57099C0.249836 3.57099 0 3.82082 0 4.12896C0 4.43704 0.249836 4.68692 0.557968 4.68692L10.0949 4.68692L7.47655 7.3054C7.25863 7.52332 7.25863 7.87658 7.47655 8.0945C7.58547 8.20338 7.72831 8.25792 7.8711 8.25792C8.0139 8.25792 8.15669 8.20338 8.26565 8.0945L11.8366 4.52351C12.0545 4.30559 12.0545 3.95232 11.8366 3.7344Z" fill="white"/>
                         </svg></span> <br> Contact</a>
                 </li>
+                <li class="header__nav-item">
+                    <a class="support-item" href="#"><b>политики</b> <span><svg width="12" height="9" viewBox="0 0 12 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.8366 3.7344L8.26556 0.163407C8.04769 -0.0544689 7.69434 -0.0544689 7.47646 0.163407C7.25854 0.381327 7.25854 0.734588 7.47646 0.952508L10.0949 3.57099L0.557968 3.57099C0.249836 3.57099 0 3.82082 0 4.12896C0 4.43704 0.249836 4.68692 0.557968 4.68692L10.0949 4.68692L7.47655 7.3054C7.25863 7.52332 7.25863 7.87658 7.47655 8.0945C7.58547 8.20338 7.72831 8.25792 7.8711 8.25792C8.0139 8.25792 8.15669 8.20338 8.26565 8.0945L11.8366 4.52351C12.0545 4.30559 12.0545 3.95232 11.8366 3.7344Z" fill="white"/>
+                        </svg></span> <br> Support</a>
+                </li>
+
+
+
+
+                
                 <li class="header__nav-item">
                 </li>
             </ul>
@@ -75,14 +92,19 @@
             <h2 class="subtitle">write to us</h2>
             </div>
             <div class="contacts__wrapper">
-                <img src="../img/contacts/contacts-img.png" alt="" class="contacts__img wow animate__animated animate__fadeInBottomLeft">
+                <picture class="contacts__img">
+                    <source media="(min-width: 541px)" srcset="../img/contacts/contacts-img.png">
+                    <source media="(max-width: 540px)" srcset="../img/contacts/contacts-mob.png">
+                    <img src="../img/services/contacts-img.png" alt="" >
+                </picture>
+                <!-- <img src="../img/contacts/contacts-img.png" alt="" class="contacts__img wow animate__animated animate__fadeInBottomLeft"> -->
                 <div class="contacts__form-wrapp wow animate__animated animate__fadeInBottomRight">
                     <div class="contacts__form-wrapp-title">Altetsa</div>
                     <h2 class="contacts__title">
                         Контакты
                     </h2>
                     <p class="contacts__descr">
-                        Для того, чтобы заказать услуги,  или задать уточняющий вопрос - оставьте свою заявку, или напишите нам напрямую по адресу <a href="mailto:info@altetsa.com" class="contacts__link">info@altetsa.com</a>
+                        Для того, чтобы заказать услуги, или задать уточняющий вопрос - оставьте свою заявку, или напишите нам напрямую по адресу <a href="mailto:info@altetsa.com" class="contacts__link">info@altetsa.com</a>
                     </p>
                     <form action="#" class="contacts__form">
                         <div class="input-dot">
@@ -113,7 +135,7 @@
                 </div>
             </div>
         
-        <span class="circle">
+        <!-- <span class="circle">
             <svg xmlns="http://www.w3.org/2000/svg" width="191" height="483" viewBox="0 0 191 483" fill="none">
             <circle cx="241.5" cy="241.5" r="190.5" fill="white" stroke="#FBFBFB" stroke-width="102"/>
             </svg></span>
@@ -154,7 +176,7 @@
         </span>
         <span class="dollar">
         </span>
-        <span class="gray"></span>  
+        <span class="gray"></span>   -->
     </section>
 
     <footer class="footer">

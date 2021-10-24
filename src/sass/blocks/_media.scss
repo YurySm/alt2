@@ -417,6 +417,7 @@
         &__img {
             min-height: unset;
             width: 100%;
+            height: auto;
             margin: 0;
             &>img {
                 width: 100%;
@@ -445,6 +446,144 @@
         }
         &__descr {
             &:last-child{
+                display: none;
+            }
+        }
+    }
+
+    .contacts {
+        padding-top: 70px;
+        padding-bottom: 0;
+        .title-group {
+            display: none;
+        }
+        &__wrapper {
+            flex-direction: column;
+            margin: 0;
+        }
+        &__img {
+            min-height: unset;
+            width: 100%;
+            margin: 0;
+            &>img {
+                width: 100%;
+            }
+        }
+        &__form-wrapp {
+            padding:12px 10px 0;
+            &-title {
+                left: 18px;
+                top: -16px;
+            }
+        }
+        &__descr {
+            font-size: 13px;
+            line-height: 180%;
+        }
+        &__form {
+            margin-top: 0;
+            input {
+                padding-left: 16px;
+            }
+            label {
+                font-size: 12px;
+                opacity: 0.7;
+            }
+        }
+    }
+    .tabs {
+        padding-top: 70px;
+        .title-group {
+            width: 100%;
+            padding-top: 22px;
+        }
+        .title-shadow {
+            font-size: 48px;
+            line-height: 100%;
+        }
+        .title {
+            font-size: 18px;
+            line-height: 120%;
+        }
+        .subtitle {
+            font-size: 8px;
+            line-height: 120%;
+        }
+        &__img {
+            width: 100%;
+            height: auto;
+            &>img {
+                width: 100%;
+            }
+        }
+        &__container {
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        &__btns {
+            // width: 100%;
+            padding-left: 12px;
+            justify-content: flex-start;
+            overflow-y: scroll;
+            &::-webkit-scrollbar { width: 0; opacity: 0;}
+            padding-bottom: 20px;
+
+        }
+        &__btn {
+            & > span {
+                display: none;
+            }
+            padding: 6px 16px;
+            // width: 100%;
+            // height: 30px;
+            background: #EAEAEA;
+            border-radius: 18px;
+            color: #18172F;
+            font-size: 12px;
+            line-height: 150%;
+            border: none;
+            white-space: nowrap;
+            &:not(last-child) {
+                margin-right: 9px;
+            }
+            &_active {
+                color: #FFFFFF;
+                background: #484CE6;
+            }
+        }
+        &__content {
+            margin-top: 6px;
+            flex-direction: column;
+            padding: 0 15px;
+            &_ok {
+                width:  calc(100% - 20px);
+                margin-top: 0;
+                padding-top: 97px;
+                min-height: 100%;
+                margin-left: 12px;
+                .ok__title {
+                    font-size: 18px;
+                    line-height: 150%;
+                }
+                .ok__subtitle {
+                    font-size: 13px;
+                    line-height: 150%;  
+                }
+            }
+        }
+        &__form {
+            input, 
+            label,
+            textarea,
+            select {
+                font-size: 13px;
+            }
+        }
+        &__company {
+            max-width: 100%;
+            margin-top: 49px;
+            padding: 0 15px;
+            img.plus {
                 display: none;
             }
         }
