@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', () => {
           close = document.querySelector('.header__close'),
           menu = document.querySelector('.header__menu'),
           menuItems = document.querySelectorAll('.header__nav-item');
+
+    let source = document.querySelectorAll('.header__logo > picture > source')[1].getAttribute('srcset');
+    
     humburger.addEventListener('click', () => {
         if(menu.classList.contains('fadeOut')) {
             menu.classList.remove('fadeOut');
@@ -13,6 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.style.display = 'block';
         close.style.display = 'block';
         humburger.style.display = 'none';
+        sourceNew = source.replace('temp', 'mob');
+        document.querySelectorAll('.header__logo > picture > source')[1].setAttribute('srcset', sourceNew);
     });
     close.addEventListener('click', () => {
         menu.classList.remove('fade');
@@ -22,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             menu.style.display = 'none';
         },600);
+        document.querySelectorAll('.header__logo > picture > source')[1].setAttribute('srcset', source);
     });
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
