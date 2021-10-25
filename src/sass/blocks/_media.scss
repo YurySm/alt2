@@ -26,7 +26,7 @@
             &-items {
                 flex-direction: column;
                 padding: 0 30px;
-                padding-top: 27%;
+                padding-top: 5%;
                 position: relative;
                 &::before {
                     content: '';
@@ -41,6 +41,7 @@
                 }
             }
             &-item {
+                background: transparent;
                 &::before,
                 &::after {
                     display: none !important;
@@ -359,13 +360,13 @@
                 background: none;
             }
             &_item.item-1{
-                background: url('/../img/price/items/mob-item-1.png') top right  no-repeat;
+                background: url('/../img/price/items/mob-item-1.png') top right/(150px auto) no-repeat;
             }
             &_item.item-2{
-                background: url('/../img/price/items/mob-item-2.png') top right  no-repeat;
+                background: url('/../img/price/items/mob-item-2.png') top right/(150px auto)  no-repeat;
             }
             &_item.item-3{
-                background: url('/../img/price/items/mob-item-3.png') top right  no-repeat;
+                background: url('/../img/price/items/mob-item-3.png') top right/(150px auto)  no-repeat;
 
             }
             &_item {
@@ -374,7 +375,7 @@
                     align-items: flex-start;  
                 }
                 &_list {
-                    margin-top: 0;
+                    margin-top: 17px;
                     li {
                         padding-left: 10px;
                         margin-bottom: 5px;
@@ -387,6 +388,7 @@
                     }
                 }
                 .conversion_list {
+                    margin-top: 17px;
                     li {
                         width: 80%;
                     }
@@ -450,12 +452,13 @@
                 margin-bottom: 15px;
                 &_text {
                     padding: 10px 15px 0 15px;
+                    font-size: 13px;
                 }
                 &_btn {
                     font-size: 12px;
                     line-height: 150%;
                     padding: 0;
-                    padding-left: 15px;
+                    padding-left: 11px;
                 }
                 &:last-child{
                     margin-bottom: 0;

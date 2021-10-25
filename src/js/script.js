@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tabs__content[i].style.display = 'flex';
             })
         })
-    } catch(e){console.log(e)}
+    } catch(e){}
     
     // tabs selects
     const model1 = document.querySelector('.model1'),

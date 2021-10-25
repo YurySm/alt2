@@ -113,7 +113,7 @@
                 color:red;
             }
         }
-        input, textarea, .choices__inner {
+        input, textarea {
             margin-bottom: 20px;
             padding: 17px;
             width: 100%;
@@ -130,6 +130,15 @@
                 background: #eaeaea;
             }
         }
+        .choices__inner{
+            margin-bottom: 20px;
+            width: 100%;
+            height: 50px;
+            border-radius: 4px;
+            background: #FBFBFB;
+            border: 1px solid #DFDFDF;
+            font-size: 15px;
+        }
         label[for="user_land"],
         label[for="user_sites"]{
             margin-top: 20px;
@@ -137,7 +146,7 @@
         .choices__inner {
             margin: 0;
             // margin-bottom: 20px;
-            line-height: 0;
+            // line-height: 0;
         }
         .choices[data-type*=select-one]:after {
             top: 20px;

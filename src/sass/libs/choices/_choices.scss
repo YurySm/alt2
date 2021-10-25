@@ -430,9 +430,6 @@
 .choices__item--disabled {
   display: none;
 }
-.choices__item {
-  padding-top: 5px;
-}
 .choices__item.choices__item--choice.choices__item--selectable {
   font-family: 'Calibri';
   font-style: normal;
@@ -451,7 +448,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 0;
 }
 .choices__list.choices__list--dropdown{
   margin-top: 0px;
