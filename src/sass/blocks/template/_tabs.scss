@@ -24,9 +24,18 @@
         color: #989898;
         background-color: transparent;
         border-bottom: 2px solid rgba(152, 152, 152, .2);
+        -webkit-tap-highlight-color: transparent;
+        & > span {
+            font-family: 'Calibri';
+        }
         &_active {
             border-color: #484CE6;
             color: #18172F;
+        }
+        &:active,
+        &:focus,
+        &:hover {
+            outline: none;
         }
     }
     &__content {

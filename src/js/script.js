@@ -24,10 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.add('fadeOut');
         humburger.style.display = 'block';
         close.style.display = 'none';
+        document.querySelectorAll('.header__logo > picture > source')[1].setAttribute('srcset', source);
         setTimeout(() => {
             menu.style.display = 'none';
         },600);
-        document.querySelectorAll('.header__logo > picture > source')[1].setAttribute('srcset', source);
+        
     });
     menuItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -35,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menu.classList.add('fadeOut');
             humburger.style.display = 'block';
             close.style.display = 'none';
+            document.querySelectorAll('.header__logo > picture > source')[1].setAttribute('srcset', source);
             setTimeout(() => {
                 menu.style.display = 'none';
             },600);
@@ -78,26 +80,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 tabs__btns.forEach( btn => {
                     btn.classList.remove('tabs__btn_active');
                 })
-                if(btn === e.target) {
+                // if(btn === e.target) {
                     btn.classList.add('tabs__btn_active');
                     tabs__content.forEach(content => {
                         content.classList.add('fadeOut');
                         content.classList.remove('fade');
                         content.style.display = 'none';     
                     });
-                }
+                // }
                 tabs__content[i].classList.remove('fadeOut');
                 tabs__content[i].classList.add('fade');
                 tabs__content[i].style.display = 'flex';
             })
         })
-    } catch(e){}
-    //tabs selects
-    const models = document.querySelectorAll('#model');
-
-    models.forEach(item => {
+    } catch(e){console.log(e)}
+    
+    // tabs selects
+    const model1 = document.querySelector('.model1'),
+          model2 = document.querySelector('.model2')
+    function initialSelect(selector){
         try{
-            const element = item;
+            const element = selector;
             const choices = new Choices(element, {
                 searchEnabled: false,
                 shouldSort: false,
@@ -105,8 +108,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 placeholder: false,
             });
         }catch(e){}
-    
-    });
+    }
+    initialSelect(model1);
+    initialSelect(model2);
 
     //faq
     const btnsFaq = document.querySelectorAll('.price__faq_item_btn'),
@@ -166,5 +170,4 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 500);
         })
     }
-    // showModal();
 });
