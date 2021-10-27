@@ -43,10 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    try {
-        new WOW().init();
-    } catch(e){}
-
     try{
         const element = document.querySelector('#services');
         const choices = new Choices(element, {
