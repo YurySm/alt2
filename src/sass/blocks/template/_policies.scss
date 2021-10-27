@@ -1,0 +1,20 @@
+.policies {
+    padding-bottom: 50px;
+    .tabs {
+        &__btns {
+            justify-content: center;
+        }
+        &__btn {
+            margin: 0 15px;
+        }
+    }
+    .contacts {
+        &__wrapper {
+            width: 100%;
+            margin-top: 0;
+        }
+        &__form-wrapp {
+            max-width: 100%;
+        }
+    }
+}

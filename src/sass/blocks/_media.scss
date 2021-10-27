@@ -73,10 +73,6 @@
         }
     }
 }
-
-
-
-
 @media (max-width: 1280px) {
     .header {
         height: 60px;
@@ -252,9 +248,6 @@
 
 
 }
-
-
-
 @media (max-width: 1024px) {
     .header {
         padding: 0 30px;
@@ -750,9 +743,17 @@
             // }
         }
     }
-
-    
-
+    .policies {
+        .contacts {
+            &__wrapper {
+                width: 100%;
+                margin-top: 25px;
+            }
+            &__form-wrapp {
+                width: 100%;
+            }
+        }
+    }
 }
 
 
@@ -2108,8 +2109,6 @@
             }
         }
     }
-
-
     .tabs {
         padding-top: 70px;
         .title-group {
@@ -2213,6 +2212,21 @@
     .policies {
         &__btn {
             text-transform: capitalize;
+        }
+    }
+    .policies {
+        padding: 70px 0px 0;
+        .tabs {
+            // &__btns {
+            //     justify-content: flex-start;
+            // }
+            
+            &__btn {
+                margin: 0;
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
         }
     }
 
