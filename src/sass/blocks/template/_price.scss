@@ -255,10 +255,6 @@
                     top: 152px;
                     left: -25px;
                 }
-                &.line-4 {
-                    // margin-left: 70px;
-                    // margin-right: 40px;
-                }
                 &.line-4 > img {
                     top: unset;
                     left: -8px;
@@ -266,7 +262,8 @@
                 }
                 &.line-6 > img {
                     top: 18px;
-                    left: -28px;                }
+                    left: -28px;                
+                }
             }
         }
         &_list {
