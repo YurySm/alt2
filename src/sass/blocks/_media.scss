@@ -1408,6 +1408,7 @@
         }
         &__form-wrapper {
             width: 100%;
+            margin-left: 0;
         }
         &__container {
             overflow: hidden;
@@ -1739,8 +1740,8 @@
         &__form-wrapp {
             padding:12px 10px 0;
             &-title {
-                left: 18px;
-                top: -16px;
+                left: 15px;
+                top: -19px;
             }
         }
         &__descr {
@@ -1749,12 +1750,21 @@
         }
         &__form {
             margin-top: 0;
-            input {
+            input, textarea {
                 padding-left: 16px;
             }
             label {
                 font-size: 12px;
                 opacity: 0.7;
+            }
+            .choices__item.choices__item--selectable {
+                line-height: 18px;
+            }
+            .choices__inner {
+                padding-left: 12px;
+            }
+            .choices[data-type*=select-one]:after {
+                top: 58%;
             }
         }
     }
@@ -1849,8 +1859,20 @@
             &__item {
                 margin-top: 18px;
             }
+            &__text-wrapper {
+                padding-top: 12px;
+                & > .contacts__form-wrapp-title {
+                    left: 4px;
+                }
+            }
         }
         &__packages {
+            &_text-wrapper {
+                padding-left: 0;
+                & > .contacts__form-wrapp-title {
+                    left: 4px;
+                }
+            }
             padding: 0 15px;
             &_items {
                 flex-direction: column;
@@ -2196,6 +2218,15 @@
             select {
                 font-size: 13px;
             }
+            .choices__item.choices__item--selectable {
+                line-height: 18px;
+            }
+            .choices__inner {
+                padding-left: 12px;
+            }
+            // .choices[data-type*=select-one]:after {
+            //     top: 58%;
+            // }
         }
         &__company {
             max-width: 100%;

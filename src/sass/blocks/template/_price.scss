@@ -21,6 +21,10 @@
         top: 68px;
         right: -36px;
         margin: 0;
+        max-width: 654px;
+        &>img {
+            width: 100%;
+        }
     }
     &__descr {
         margin-top: 27px;
